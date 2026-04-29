@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #0097B2;
+  --color-primary-container: #0ea5e9;
+  --color-on-primary: #ffffff;
+  --color-secondary: #5B5B5B;
+  --color-secondary-container: #e2e8f0;
+  --color-tertiary: #a93349;
+  --color-background: #f7f9fb;
+  --color-surface: #ffffff;
+  
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #3e4850;
+  --color-outline: #6e7881;
+  --color-outline-variant: #bec8d2;
+
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface antialiased;
+    background: radial-gradient(circle at top left, rgba(201, 230, 255, 0.6) 0%, transparent 40%),
+                radial-gradient(circle at bottom right, rgba(108, 248, 187, 0.4) 0%, transparent 40%);
+    background-attachment: fixed;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-[20px] border border-white/90 shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-300;
+  }
+
+  .glass-nav {
+    @apply bg-white/70 backdrop-blur-[20px] border-b border-white/30 shadow-[0_20px_40px_rgba(0,0,0,0.04)];
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all hover:opacity-90 active:scale-95 shadow-sm;
+  }
+
+  .btn-outline {
+    @apply bg-white/50 backdrop-blur-md border border-white text-primary px-6 py-3 rounded-lg font-semibold shadow-sm hover:bg-white/80 transition-all active:scale-95;
+  }
+}
