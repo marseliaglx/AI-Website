@@ -155,7 +155,7 @@ const PRODUCTS = [
   }
 ];
 
-const EditorialCard = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => (
+const EditorialCard = ({ children, className = "" }: { children: React.ReactNode, className?: string, key?: React.Key }) => (
   <motion.div 
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -230,11 +230,8 @@ export default function App() {
           </div>
           
           <div className="hidden md:flex items-center gap-4">
-            <button className="text-sm font-medium text-slate-600 hover:text-primary transition-all px-4 py-2 rounded-lg hover:bg-primary/5">
-              Login
-            </button>
             <button className="btn-primary">
-              Get Started
+              Contact Us
             </button>
           </div>
 
@@ -663,7 +660,7 @@ export default function App() {
               ))}
             </div>
             <button className="mt-auto btn-primary w-full py-4 text-lg">
-              Get Started
+              Contact Us
             </button>
           </motion.div>
         )}
