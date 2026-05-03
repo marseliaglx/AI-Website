@@ -19,33 +19,45 @@ export function AboutSection() {
               About
             </p>
 
-            <h2 className="text-2xl sm:text-3xl font-bold text-charcoal">
-              I&apos;m Marcela. I have spent fifteen years making complex things make
-              sense to ordinary people.
+            <h2 className="text-2xl sm:text-3xl font-bold text-charcoal text-balance">
+              {"I'm Marcela. I make complex things make sense to ordinary people."}
             </h2>
 
-            <div className="space-y-4 text-ink leading-relaxed">
+            <div className="space-y-5 text-ink leading-relaxed">
               <p>
-                I built knowledge operations for Microsoft, VMware, EA Games,
-                and Blizzard, where the day job was translating engineer-speak
-                into something the rest of the company could act on. Before that
-                I was Chief of Staff to a Member of the European Parliament,
-                which is where I learned that the difference between regulation
-                working and regulation failing is whether someone bothered to
-                write it in plain English.
+                I started in the European Parliament, where I learned that the
+                difference between a regulation working and a regulation failing
+                is whether someone bothered to write it in plain English. Then I
+                spent fifteen years in big tech, at Microsoft and VMware, mostly
+                translating engineer-speak into something the rest of the
+                company could act on.
               </p>
+
+              {/* Pull-quote block */}
+              <blockquote className="border-l-4 border-teal pl-5 py-2 text-lg font-light italic text-charcoal">
+                AI is a powerful tool. Used with humans in mind, it can
+                genuinely empower a small business. Used carelessly, it can
+                quietly risk everything you&apos;ve built&mdash;your customer trust,
+                your data, your reputation. Nobody knows yet exactly which AI
+                skills will matter most in three years. What we do know is that
+                the small organisations that get ahead of this now will not be
+                left behind.
+              </blockquote>
+
               <p>
-                I am CeADAR-trained on the EU AI Act, currently completing the
-                AI in Business microcredential at Digital4Business, and
-                bilingual in English and Polish. I run SafeAI from Cork because
-                the Irish small businesses, schools, and community organisations
-                I work with deserve a real human, not an AI startup pitch deck.
+                I hold a Master&apos;s in Public Administration in the European
+                Legal System from the University of Opole. I am also completing
+                two further university-led programmes: AI in Business and
+                Digital Transformation, both delivered through the EU-funded
+                Digital4Business consortium of Bologna, the National College of
+                Ireland, Linköping, and NOVA IMS.
+              </p>
+
+              <p className="text-sm font-light italic text-teal">
+                I run SafeAI from Cork. Bilingual English and Polish. No jargon,
+                no formality, no upselling.
               </p>
             </div>
-
-            <p className="text-xl font-light italic text-teal pt-4">
-              Use AI. Stay safe. Sleep at night.
-            </p>
           </div>
         </div>
       </div>

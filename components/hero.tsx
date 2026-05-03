@@ -60,20 +60,34 @@ export function Hero() {
             </div>
 
             {/* Trust Signals */}
-            <div className="flex flex-wrap gap-2 pt-6">
-              {[
-                "CeADAR-trained",
-                "EU AI Act specialist",
-                "15 years at Microsoft, VMware, Blizzard",
-                "Cork-based",
-              ].map((signal) => (
-                <span
-                  key={signal}
-                  className="inline-flex items-center rounded-full bg-cream px-3 py-1 text-sm text-ink"
-                >
-                  {signal}
-                </span>
-              ))}
+            <div className="pt-6">
+              {/* Desktop: interpunct-separated, centered, can wrap */}
+              <p className="hidden sm:block text-center text-muted font-medium text-sm leading-relaxed">
+                European Parliament{" "}
+                <span className="mx-2">·</span>
+                Microsoft{" "}
+                <span className="mx-2">·</span>
+                VMware{" "}
+                <span className="mx-2">·</span>
+                {"Master's, European Legal System (University of Opole)"}
+              </p>
+              {/* Mobile: stacked with teal bullets */}
+              <ul className="sm:hidden space-y-1.5">
+                {[
+                  "European Parliament",
+                  "Microsoft",
+                  "VMware",
+                  "Master's, European Legal System (University of Opole)",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-center gap-2 text-muted font-medium text-sm"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-teal flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
