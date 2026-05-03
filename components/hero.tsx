@@ -15,7 +15,7 @@ export function Hero() {
 
             {/* H1 */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-charcoal leading-tight">
-              {'"I only use '}
+              {"Using AI like "}
               <span className="relative inline-block">
                 ChatGPT
                 <svg
@@ -33,14 +33,16 @@ export function Hero() {
                   />
                 </svg>
               </span>
-              {'. That\'s safe, right?"'}
+              {" or Claude in your business? You may already have legal obligations and create risks."}
             </h1>
 
             {/* Sub-headline */}
             <p className="text-lg sm:text-xl lg:text-2xl font-light text-charcoal max-w-2xl leading-relaxed">
-              It usually is. Sometimes it is not. SafeAI helps Irish SMEs use AI
-              confidently, meet their EU AI Act obligations, and stop worrying
-              about it on a Tuesday evening.
+              From writing emails to creating marketing content, everyday AI use
+              can create hidden risks under the EU AI Act and GDPR even for
+              small Irish businesses, schools, and community organisations.
+              SafeAI helps Irish SMEs use AI confidently, meet their EU AI Act
+              obligations, and stop worrying about it on a Tuesday evening.
             </p>
 
             {/* CTAs */}
