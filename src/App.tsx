@@ -29,7 +29,7 @@ import {
   FileText,
   Clock
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 
 // --- Types ---
 interface QuizResult {
