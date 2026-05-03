@@ -327,7 +327,7 @@ export default function App() {
               className="glass-card p-6 rounded-2xl flex items-center gap-6"
             >
               <div className="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center text-primary shrink-0">
-                {React.cloneElement(scen.icon as React.ReactElement, { size: 20 })}
+                {scen.icon}
               </div>
               <p className="text-lg text-slate-800 font-medium">{scen.text}</p>
             </motion.div>
@@ -511,7 +511,7 @@ export default function App() {
           {FREEBIES.map((free, idx) => (
             <EditorialCard key={idx} className="flex flex-col group">
               <div className="w-16 h-16 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
-                {React.cloneElement(free.icon as React.ReactElement, { className: "w-8 h-8", strokeWidth: 1.5 })}
+                {free.icon}
               </div>
               <h3 className="text-2xl font-bold mb-4">{free.title}</h3>
               <p className="text-on-surface-variant flex-grow mb-10 leading-relaxed font-medium">
@@ -542,7 +542,7 @@ export default function App() {
             <div key={idx} className="bg-secondary/40 p-12 rounded-[2rem] flex flex-col group">
               <div className="flex justify-between items-start mb-12">
                 <div className="text-on-surface opacity-80">
-                  {React.cloneElement(ebook.icon as React.ReactElement, { className: "w-8 h-8" })}
+                  {ebook.icon}
                 </div>
                 <span className="text-[10px] font-bold uppercase tracking-widest bg-on-surface text-white px-2.5 py-1 rounded-md">
                   {ebook.badge}
