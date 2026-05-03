@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #1B9AAA;
+  --color-navy: #1B3A6B;
+  --color-charcoal: #3F4B56;
+  --color-ink: #2D3640;
+  --color-muted: #7A8590;
+  --color-cream: #F4F7F9;
+  --color-soft-teal: #E6F4F6;
+  --color-background: #FFFFFF;
+  --color-foreground: #2D3640;
+  
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: var(--color-background);
+}
+
+/* Focus ring styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+/* Remove default focus outline and add custom */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
