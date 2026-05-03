@@ -33,8 +33,12 @@ export function Hero() {
                   />
                 </svg>
               </span>
-              {" or Claude in your business? You may already have legal obligations and create risks."}
+              {" or Claude in your business?"}
             </h1>
+            {/* Urgency/Problem Statement */}
+            <p className="text-xl sm:text-2xl lg:text-3xl font-medium italic text-navy">
+              You may already have legal obligations and create risks.
+            </p>
 
             {/* Sub-headline */}
             <p className="text-lg sm:text-xl lg:text-2xl font-light text-charcoal max-w-2xl leading-relaxed">
