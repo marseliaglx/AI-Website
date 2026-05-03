@@ -59,36 +59,7 @@ export function Hero() {
               </Link>
             </div>
 
-            {/* Trust Signals */}
-            <div className="pt-6">
-              {/* Desktop: interpunct-separated, centered, can wrap */}
-              <p className="hidden sm:block text-center text-muted font-medium text-sm leading-relaxed">
-                European Parliament{" "}
-                <span className="mx-2">·</span>
-                Microsoft{" "}
-                <span className="mx-2">·</span>
-                VMware{" "}
-                <span className="mx-2">·</span>
-                {"Master's, European Legal System (University of Opole)"}
-              </p>
-              {/* Mobile: stacked with teal bullets */}
-              <ul className="sm:hidden space-y-1.5">
-                {[
-                  "European Parliament",
-                  "Microsoft",
-                  "VMware",
-                  "Master's, European Legal System (University of Opole)",
-                ].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2 text-muted font-medium text-sm"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-teal flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+
           </div>
 
           {/* Right Column - Robot Mascot */}
