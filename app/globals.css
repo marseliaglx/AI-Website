@@ -11,7 +11,7 @@
   --color-background: #FFFFFF;
   --color-foreground: #2D3640;
   
-  --font-sans: var(--font-poppins), system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 html {
