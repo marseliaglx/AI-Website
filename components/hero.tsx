@@ -42,11 +42,10 @@ export function Hero() {
 
             {/* Sub-headline */}
             <p className="text-lg sm:text-xl lg:text-2xl font-light text-charcoal max-w-2xl leading-relaxed">
-              From writing emails to creating marketing content, everyday AI use
-              can create hidden risks under the EU AI Act and GDPR even for
-              small Irish businesses, schools, and community organisations.
-              SafeAI helps Irish SMEs use AI confidently, meet their EU AI Act
-              obligations, and stop worrying about it on a Tuesday evening.
+              Even everyday use of AI tools can create legal obligations under
+              the EU AI Act and GDPR. SafeAI helps Irish SMEs use AI
+              confidently, meet their EU AI Act obligations, and stop worrying
+              about it on a Tuesday evening.
             </p>
 
             {/* CTAs */}
