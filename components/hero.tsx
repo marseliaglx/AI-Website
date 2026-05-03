@@ -15,7 +15,7 @@ export function Hero() {
 
             {/* H1 */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-charcoal leading-tight">
-              {'"I only use '}
+              {"Using AI like "}
               <span className="relative inline-block">
                 ChatGPT
                 <svg
@@ -33,12 +33,17 @@ export function Hero() {
                   />
                 </svg>
               </span>
-              {'. That\'s safe, right?"'}
+              {" or Claude in your business?"}
             </h1>
+            {/* Urgency/Problem Statement */}
+            <p className="text-xl sm:text-2xl lg:text-3xl font-medium italic text-navy">
+              You may already have legal obligations and create risks.
+            </p>
 
             {/* Sub-headline */}
             <p className="text-lg sm:text-xl lg:text-2xl font-light text-charcoal max-w-2xl leading-relaxed">
-              It usually is. Sometimes it is not. SafeAI helps Irish SMEs use AI
+              Even everyday use of AI tools can create legal obligations under
+              the EU AI Act and GDPR. SafeAI helps Irish SMEs use AI
               confidently, meet their EU AI Act obligations, and stop worrying
               about it on a Tuesday evening.
             </p>
